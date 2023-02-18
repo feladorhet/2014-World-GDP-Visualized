@@ -15,9 +15,12 @@ mydata = dict(type="choropleth",
             colorbar = {"title":"GDP IN BILLIONS"},
             marker = dict(line = dict(color = "rgb(255,255,255)", width = 1))
             )
+
+#the layout for choropleth
 mylayout = dict(title="2014 World GDP",
             geo = dict(scope="world", showlakes=True, lakecolor = "rgb(85,173,240)", showframe=False)
             )
 
+#initialize and print the map figure
 myChoroMap = go.Figure(data=[mydata], layout=mylayout)
 iplot(myChoroMap)
