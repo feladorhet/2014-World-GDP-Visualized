@@ -1,4 +1,4 @@
-import chart_studio.plotly as py
+#import chart_studio.plotly as py
 import plotly.graph_objects as go
 from plotly.offline import iplot
 import pandas as pd
