@@ -8,12 +8,14 @@ df = pd.read_csv("2014_World_GDP.csv")
 
 #the data for choropleth
 mydata = dict(type="choropleth",
+            colorscale="Viridis"
             locations=df["CODE"],
             locationmode = "ISO-3",
             z = df["GDP (BILLIONS)"],
             text = df["COUNTRY"],
             colorbar = {"title":"GDP IN BILLIONS"},
-            marker = dict(line = dict(color = "rgb(255,255,255)", width = 1))
+            marker = dict(line = dict(color = "rgb(255,255,255)", width = 1)),
+            reversescale=True
             )
 
 #the layout for choropleth
