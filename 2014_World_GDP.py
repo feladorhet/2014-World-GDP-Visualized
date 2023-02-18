@@ -4,7 +4,7 @@ from plotly.offline import iplot
 import pandas as pd
 
 df = pd.read_csv("2014_World_GDP.csv")
-#print(df.columns) to check the ocls
+#print(df.columns) to check the cols
 
 #the data for choropleth
 mydata = dict(type="choropleth",
