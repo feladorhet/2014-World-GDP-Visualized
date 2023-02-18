@@ -8,7 +8,7 @@ df = pd.read_csv("2014_World_GDP.csv")
 
 #the data for choropleth
 mydata = dict(type="choropleth",
-            colorscale="Viridis"
+            colorscale="Viridis",
             locations=df["CODE"],
             locationmode = "ISO-3",
             z = df["GDP (BILLIONS)"],
