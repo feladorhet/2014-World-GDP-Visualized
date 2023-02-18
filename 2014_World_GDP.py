@@ -1,6 +1,6 @@
 import chart_studio.plotly as py
 import plotly.graph_objects as go
-from plotly.offline import download_plotlyjs, plot, iplot
+from plotly.offline import iplot
 import pandas as pd
 
 df = pd.read_csv("2014_World_GDP.csv")
